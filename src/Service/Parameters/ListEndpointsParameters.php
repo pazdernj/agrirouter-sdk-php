@@ -25,12 +25,12 @@ namespace App\Service\Parameters {
             $this->technicalMessageType = $technicalMessageType;
         }
 
-        public function getDirection(): string
+        public function getDirection(): int
         {
             return $this->direction;
         }
 
-        public function setDirection(string $direction): void
+        public function setDirection(int $direction): void
         {
             $this->direction = $direction;
         }
