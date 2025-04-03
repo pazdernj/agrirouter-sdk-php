@@ -38,6 +38,7 @@ namespace App\Service\Messaging\Http {
         {
             $headers = [
                 'Content-type' => 'application/json',
+				'Accept' => 'application/json',
             ];
             $request = $this->httpClient->createRequest('GET', $onboardResponse->getConnectionCriteria()->getCommands(), $headers);
             try {
